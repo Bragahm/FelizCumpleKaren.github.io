@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompts Profesionales para Docentes | CNEB Perú</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --minedu-blue: #00548F;
+            --minedu-light-blue: #E6F2F9;
+            --minedu-orange: #F37021;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: var(--minedu-blue);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 84, 143, 0.8), rgba(0, 84, 143, 0.9)), url('https://www.minedu.gob.pe/images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+        }
+        
+        .card-feature {
+            transition: transform 0.3s;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .prompt-card {
+            background-color: var(--minedu-light-blue);
+            border-left: 5px solid var(--minedu-orange);
+        }
+        
+        .badge-cneb {
+            background-color: var(--minedu-orange);
+        }
+        
+        footer {
+            background-color: var(--minedu-blue);
+            color: white;
+        }
+        
+        .example-box {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            position: relative;
+        }
+        
+        .example-box:before {
+            content: "EJEMPLO";
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            background: var(--minedu-orange);
+            color: white;
+            padding: 0 10px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .tab-content {
+            padding: 20px;
+            border-left: 1px solid #dee2e6;
+            border-right: 1px solid #dee2e6;
+            border-bottom: 1px solid #dee2e6;
+            border-radius: 0 0 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.minedu.gob.pe/images/logo.png" alt="MINEDU" height="40">
+                <span class="ms-2">Prompts Docentes</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#estructura">Estructura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ejemplos">Ejemplos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plantillas">Plantillas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recursos">Recursos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Creación de Prompts Profesionales para Docentes</h1>
+            <p class="lead mb-5">Aprende a diseñar instrucciones efectivas para IA que generen materiales pedagógicos alineados al Currículo Nacional de Educación Básica (CNEB) del Perú</p>
+            <a href="#estructura" class="btn btn-light btn-lg px-4 me-2">Comenzar</a>
+            <a href="#plantillas" class="btn btn-outline-light btn-lg px-4">Plantillas</a>
+        </div>
+    </section>
+
+    <!-- Introducción -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">¿Por qué usar prompts profesionales?</h2>
+                    <p class="lead">Los docentes peruanos dedican en promedio <strong>12 horas semanales</strong> a la planificación curricular (MINEDU, 2023). Con prompts bien diseñados, puedes reducir este tiempo en un <strong>50%</strong> manteniendo la calidad pedagógica.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-lightbulb me-2"></i>¿Qué es un prompt?</h5>
+                            <p class="card-text">Un prompt es una instrucción detallada que guía a la inteligencia artificial (como ChatGPT, Gemini, etc.) para generar recursos educativos específicos y adaptados a tus necesidades.</p>
+                            <div class="example-box mt-3">
+                                <p class="mb-1"><strong>Prompt básico:</strong> "Haz una clase sobre fotosíntesis"</p>
+                                <p class="mb-0"><strong>Prompt profesional:</strong> "Diseña una sesión de CTA para 2° secundaria que desarrolle la competencia 'Indaga mediante métodos científicos' (Estándar E08), usando experimentos con plantas locales..."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estructura de un Prompt Profesional -->
+    <section id="estructura" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Estructura de un Prompt Profesional (CNEB)</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 card-feature">
+                        <div class="card-body text-center">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                                <i class="fas fa-gavel text-primary fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">1. Contexto Legal CNEB</h5>
+                            <p class="card-text">Especifica área, competencia, estándar, capacidad y enfoque transversal según el Currículo Nacional.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 card-feature">
+                        <div class="card-body text-center">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                                <i class="fas fa-robot text-primary fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">2. Rol de la IA</h5>
+                            <p class="card-text">Asigna un rol experto a la IA (ej: "Como especialista en didáctica de matemáticas del MINEDU").</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 card-feature">
+                        <div class="card-body text-center">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                                <i class="fas fa-tasks text-primary fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">3. Instrucción Técnica</h5>
+                            <p class="card-text">Detalla metodología, tiempo, recursos y actividades específicas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100 card-feature">
+                        <div class="card-body text-center">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                                <i class="fas fa-users text-primary fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">4. Diversificación</h5>
+                            <p class="card-text">Incluye adaptaciones para NEE, EIB (Educación Intercultural Bilingüe) y contexto local.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100 card-feature">
+                        <div class="card-body text-center">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                                <i class="fas fa-table text-primary fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">5. Formato de Salida</h5>
+                            <p class="card-text">Solicita tablas, listas, rúbricas u otros formatos organizados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5">
+                <h4 class="mb-3">Fórmula completa:</h4>
+                <div class="prompt-card p-4 mb-4">
+                    <code>
+                        "Como [ROL: experto en didáctica del área], genera [RECURSO: sesión/unidad/rúbrica] para [GRADO/ÁREA], desarrollando la competencia '[COMPETENCIA CNEB]' (Estándar E0X), capacidad '[CAPACIDAD]'.<br><br>
+                        
+                        - Metodología: _______________ (ABP, indagación, etc.)<br>
+                        - Tiempo: _______ minutos<br>
+                        - Recursos: _______________<br>
+                        - Actividades: Inicio: ______, Desarrollo: ______, Cierre: ______<br>
+                        - Evaluación: [Instrumento] con estos indicadores: 1) ______, 2) ______<br>
+                        - Adaptación: Para [NEE/EIB/contexto], incluir: __________<br><br>
+                        
+                        Formato: [Tabla/Lista/Diagrama]."
+                    </code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ejemplos Avanzados -->
+    <section id="ejemplos" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Ejemplos Avanzados por Área Curricular</h2>
+            
+            <ul class="nav nav-tabs" id="exampleTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="math-tab" data-bs-toggle="tab" data-bs-target="#math" type="button">Matemática</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="science-tab" data-bs-toggle="tab" data-bs-target="#science" type="button">Ciencia y Tecnología</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="social-tab" data-bs-toggle="tab" data-bs-target="#social" type="button">Ciencias Sociales</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="inclusive-tab" data-bs-toggle="tab" data-bs-target="#inclusive" type="button">Educación Inclusiva</button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="exampleTabsContent">
+                <div class="tab-pane fade show active" id="math" role="tabpanel">
+                    <h4 class="mb-3">Matemática - 4° Primaria</h4>
+                    <div class="example-box mb-4">
+                        <p><strong>Prompt:</strong></p>
+                        <p>"Como especialista en Matemática del MINEDU, diseña una <strong>sesión de aprendizaje de 90 minutos</strong> para 4° de primaria (UGEL 07) que desarrolle la <strong>competencia 'Resuelve problemas de cantidad' (CNEB)</strong>, capacidad 'Usa estrategias para resolver problemas con multiplicaciones'.</p>
+                        <p>- <strong>Metodología</strong>: Aprendizaje Basado en Problemas (ABP), usando el contexto de un 'mercado escolar' (precios reales de productos de la zona).</p>
+                        <p>- <strong>Actividades</strong>:</p>
+                        <ul>
+                            <li>Inicio: Presentación del problema: "¿Cuánto gastaré si compro 5 lapiceros a S/2 cada uno?"</li>
+                            <li>Desarrollo: Trabajo en equipos con material concreto (billetes ficticios).</li>
+                            <li>Cierre: Socialización con rúbrica de coevaluación.</li>
+                        </ul>
+                        <p>- <strong>Evaluación</strong>: Lista de cotejo con indicadores:</p>
+                        <ol>
+                            <li>Identifica datos del problema.</li>
+                            <li>Aplica estrategia de multiplicación.</li>
+                            <li>Explica su procedimiento.</li>
+                        </ol>
+                        <p>- <strong>Adaptación</strong>: Incluye versión para estudiante con discalculia (uso de ábaco y gráficos).</p>
+                        <p><strong>Formato</strong>: Tabla con tiempos, materiales y evaluación."</p>
+                    </div>
+                    
+                    <h5>Output esperado (extracto):</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Tiempo</th>
+                                    <th>Actividad</th>
+                                    <th>Materiales</th>
+                                    <th>Evaluación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>20 min</td>
+                                    <td>Presentación del problema en contexto real (mercado escolar)</td>
+                                    <td>Imágenes de productos, precios reales</td>
+                                    <td>Observación de participación</td>
+                                </tr>
+                                <tr>
+                                    <td>40 min</td>
+                                    <td>Resolución en equipos con material concreto</td>
+                                    <td>Billetes ficticios, fichas</td>
+                                    <td>Lista de cotejo (indicadores 1 y 2)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="science" role="tabpanel">
+                    <h4 class="mb-3">Ciencia y Tecnología - 2° Secundaria</h4>
+                    <div class="example-box mb-4">
+                        <p><strong>Prompt:</strong></p>
+                        <p>"Como especialista en CTA del MINEDU, crea una <strong>unidad didáctica de 2 semanas</strong> sobre 'Ecosistemas acuáticos del Perú' para 2° secundaria, desarrollando la <strong>competencia 'Explica el mundo físico basado en conocimientos científicos' (Estándar E07)</strong>.</p>
+                        <p>- <strong>Metodología</strong>: Indagación científica con salida de campo (si es posible) o análisis de videos/documentales.</p>
+                        <p>- <strong>Producto final</strong>: Maqueta de ecosistema acuático peruano (laguna, río amazónico o mar frío) con explicación científica.</p>
+                        <p>- <strong>Evaluación</strong>: Rúbrica con:</p>
+                        <ol>
+                            <li>Identificación de componentes bióticos/abióticos</li>
+                            <li>Explicación de interrelaciones</li>
+                            <li>Creatividad y uso de materiales reciclados</li>
+                        </ol>
+                        <p>- <strong>Adaptación</strong>: Versión para escuelas sin acceso a internet (guía impresa con imágenes).</p>
+                        <p><strong>Formato</strong>: Programación semanal con actividades diferenciadas."</p>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="social" role="tabpanel">
+                    <h4 class="mb-3">Ciencias Sociales - 5° Secundaria</h4>
+                    <div class="example-box mb-4">
+                        <p><strong>Prompt:</strong></p>
+                        <p>"Como experto en Ciencias Sociales (MINEDU), diseña una <strong>sesión de 45 minutos</strong> para 5° secundaria sobre la competencia <strong>'Construye interpretaciones históricas'</strong>, capacidad 'Analiza causas y consecuencias de procesos históricos', usando como caso la Revolución Industrial.</p>
+                        <p>- <strong>Contexto</strong>: Comparar con el desarrollo industrial en el Perú (ej: Parque Industrial de Arequipa).</p>
+                        <p>- <strong>Recursos</strong>: Fragmentos de fuentes primarias, infografías comparativas.</p>
+                        <p>- <strong>Evaluación</strong>: Debate con rúbrica (indicadores: argumentación histórica, uso de fuentes, conexión con realidad actual).</p>
+                        <p>- <strong>Adaptación</strong>: Versión para EIB quechua con glosario técnico bilingüe.</p>
+                        <p><strong>Formato</strong>: Secuencia didáctica en tabla con tiempos estimados."</p>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="inclusive" role="tabpanel">
+                    <h4 class="mb-3">Educación Inclusiva - Inicial</h4>
+                    <div class="example-box mb-4">
+                        <p><strong>Prompt:</strong></p>
+                        <p>"Como especialista en educación inclusiva (MINEDU), adapta la actividad <strong>'Clasificación de seres vivos'</strong> (3 a 5 años) para un niño con <strong>parálisis cerebral</strong>, considerando:</p>
+                        <p>- <strong>Enfoque multisensorial</strong>: Usar texturas (peluche suave para animales, lija para plantas).</p>
+                        <p>- <strong>Comunicación aumentativa</strong>: Pictogramas ARASAAC para instrucciones.</p>
+                        <p>- <strong>Tiempo</strong>: Actividades de máximo 5 minutos con refuerzos visuales (timers).</p>
+                        <p>- <strong>Evaluación</strong>: Registro anecdótico de interacciones con los materiales.</p>
+                        <p><strong>Formato</strong>: Secuencia de 3 pasos con imágenes de apoyo."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plantillas -->
+    <section id="plantillas" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Plantillas para Descargar</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-file-word text-primary me-2"></i>Sesión de Aprendizaje</h5>
+                            <p class="card-text">Plantilla estructurada para crear prompts que generen sesiones completas alineadas al CNEB.</p>
+                            <a href="#" class="btn btn-outline-primary">Descargar .docx</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-table text-primary me-2"></i>Rúbricas de Evaluación</h5>
+                            <p class="card-text">Plantilla para generar instrumentos de evaluación con indicadores observables.</p>
+                            <a href="#" class="btn btn-outline-primary">Descargar .docx</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-project-diagram text-primary me-2"></i>Unidad Didáctica</h5>
+                            <p class="card-text">Estructura completa para diseñar unidades curriculares con enfoque por competencias.</p>
+                            <a href="#" class="btn btn-outline-primary">Descargar .docx</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-users-cog text-primary me-2"></i>Adaptaciones Curriculares</h5>
+                            <p class="card-text">Plantilla para NEE y contextos EIB (Educación Intercultural Bilingüe).</p>
+                            <a href="#" class="btn btn-outline-primary">Descargar .docx</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5">
+                <h4 class="mb-3">Checklist de Validación CNEB</h4>
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Competencia y estándar alineados al CNEB 2024
+                                <span class="badge bg-primary rounded-pill">Requisito</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Metodología coherente con el enfoque del área
+                                <span class="badge bg-primary rounded-pill">Requisito</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Evaluación con instrumentos válidos (rúbricas, listas de cotejo)
+                                <span class="badge bg-primary rounded-pill">Requisito</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Diversificación explícita (NEE, EIB, contexto)
+                                <span class="badge bg-primary rounded-pill">Requisito</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Formato claro y organizado
+                                <span class="badge bg-success rounded-pill">Recomendado</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos Adicionales -->
+    <section id="recursos" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Recursos Oficiales</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-book me-2"></i>Currículo Nacional</h5>
+                            <p class="card-text">Documento oficial del CNEB 2024 con competencias, capacidades y estándares.</p>
+                            <a href="http://www.minedu.gob.pe/curriculo/" class="btn btn-sm btn-outline-primary" target="_blank">Visitar sitio</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-file-alt me-2"></i>Rúbricas CNEB</h5>
+                            <p class="card-text">Instrumentos de evaluación por competencias del Ministerio de Educación.</p>
+                            <a href="https://repositorio.minedu.gob.pe/" class="btn btn-sm btn-outline-primary" target="_blank">Visitar sitio</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-graduation-cap me-2"></i>PerúEduca</h5>
+                            <p class="card-text">Plataforma con recursos digitales para docentes peruanos.</p>
+                            <a href="https://www.perueduca.pe/" class="btn btn-sm btn-outline-primary" target="_blank">Visitar sitio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5">
+                <h4 class="mb-3">Vídeo Demostrativo</h4>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/ejemplo" title="Demo Prompts CNEB" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://www.minedu.gob.pe/images/logo-footer.png" alt="MINEDU" height="40">
+                    <p class="mt-2 mb-0">Material desarrollado para docentes peruanos</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-1">© 2024 Ministerio de Educación del Perú</p>
+                    <p class="mb-0">Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
